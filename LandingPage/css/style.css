@@ -1,0 +1,135 @@
+/* aprendendo e treinando */
+/* MIT License
+Copyright (c) 2019 Florin Pop
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Castoro', serif;
+
+}
+
+header{
+
+    background-image: url(../img/fantasy.jpg);  /* credits: https://pixabay.com/pt/illustrations/fantasia-lua-menina-noite-banco-5316369/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 30px;
+}
+
+.logo{
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    margin-left: 35px;
+    
+}
+
+ul li a{
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.half{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: calc(100vh - 200px);
+    max-width:940px;
+    margin: auto;
+    padding: 20px;
+    text-align: right;
+
+}
+
+
+.half p{
+    font-size: 1em;
+    line-height: 36px;
+    width: 60%;
+    margin-top: 5px;
+}
+
+
+.half a{
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: #18374f;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.7em;
+    padding: 15px 50px;
+    letter-spacing: 2px;
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .logo{
+        
+        font-size: 0.5em;
+    }
+
+    ul li{
+        margin-left: 15px;
+    }
+    
+    .half{
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .half p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .logo{
+        font-size: 0.5em;
+    }
+
+    ul li{
+        margin-left: 13px;
+        margin-top: 7px;
+    }
+   
+    ul li a{
+        
+        font-size: 0.9em;
+    }
+    
+}
